@@ -1,0 +1,8 @@
+# learn link redirect
+/learn  /learn.html 200
+
+# save link redirect
+/save   /test-savings.html  200
+
+# invest link redirect
+/invest /test-graph.html 200
