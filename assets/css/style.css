@@ -1380,3 +1380,10 @@ section {
     text-align-last: center;
   }
 }
+ 
+tr{
+   height: 40px;
+ }
+tr:nth-child(even) {
+  background-color: #f2f2f2;
+}
