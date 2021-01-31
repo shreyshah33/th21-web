@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta content="width=device-width, initial-scale=1.0" name="viewport">
+
+    <title>eNno Bootstrap Template - Index</title>
+    <meta content="" name="description">
+    <meta content="" name="keywords">
+
+    <!-- Favicons -->
+    <link href="assets/img/favicon.png" rel="icon">
+    <link href="assets/img/apple-touch-icon.png" rel="apple-touch-icon">
+
+    <!-- Google Fonts -->
+    <link
+        href="https://fonts.googleapis.com/css?family=Open+Sans:300,300i,400,400i,600,600i,700,700i|Raleway:300,300i,400,400i,500,500i,600,600i,700,700i|Poppins:300,300i,400,400i,500,500i,600,600i,700,700i"
+        rel="stylesheet">
+
+    <!-- Vendor CSS Files -->
+    <link href="assets/vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+    <link href="assets/vendor/icofont/icofont.min.css" rel="stylesheet">
+    <link href="assets/vendor/boxicons/css/boxicons.min.css" rel="stylesheet">
+    <link href="assets/vendor/venobox/venobox.css" rel="stylesheet">
+    <link href="assets/vendor/owl.carousel/assets/owl.carousel.min.css" rel="stylesheet">
+
+
+    <script type="text/javascript" src="https://www.gstatic.com/charts/loader.js"></script>
+    <script type="text/javascript" src="invest-returns.js"></script>
+
+    <!-- Template Main CSS File -->
+    <!-- <link href="assets/css/style.css" rel="stylesheet"> -->
+
+    <!-- =======================================================
+  * Template Name: eNno - v2.2.0
+  * Template URL: https://bootstrapmade.com/enno-free-simple-bootstrap-template/
+  * Author: BootstrapMade.com
+  * License: https://bootstrapmade.com/license/
+  ======================================================== -->
+</head>
+
+<body>
+    <div class="container">
+        <div class="row align-items-center mt-3">
+            <div class="col-sm-4 col-md-4 col-lg-4">
+                <button id="bank" class="btn btn-outline-secondary" data-bs-toggle="button" style="width:100%"
+                    onclick="onBankClick()">
+                    <b>Bank</b> <img class="img-responsive"
+                        src="assets/img/DrawKit - Economy & Finance/6 - FINANCES.svg" width="100%"></button>
+            </div>
+            <div class="col-sm-4 col-md-4 col-lg-4">
+                <button id="stocks" class="btn btn-outline-secondary active" data-bs-toggle="button" style="width:100%"
+                    onclick="onStocksClick()"><b>Stocks/ETFs</b><img class="img-responsive"
+                        src="assets/img/DrawKit - Economy & Finance/10 - BIKE .svg" width="100%"></button>
+            </div>
+            <div class="col-sm-4 col-md-4 col-lg-4">
+                <button id="custom" class="btn btn-outline-secondary" data-bs-toggle="button" style="width:100%"
+                    onclick="onCustomClick()"><b>Custom</b><img class="img-responsive"
+                        src="assets/img/DrawKit - Economy & Finance/9 - ECONOMY ANALYSIS.svg" width="100%"></button>
+            </div>
+        </div>
+        <form class="row g-3 mt-3 align-items-end">
+            <div class="col-md-3">
+                <label for="principal" class="form-label">Saving Principal</label>
+                <div class="input-group">
+                    <div class="input-group-prepend">
+                        <div class="input-group-text">$</div>
+                    </div>
+                    <input type="number" class="form-control" id="principal" placeholder=10000>
+                </div>
+            </div>
+            <div class="col-md-3">
+                <label for="years" class="form-label">Years to Invest</label>
+                <input type="number" class="form-control" id="years" placeholder=10>
+            </div>
+            <div class="col-md-3">
+                <label for="growth" class="form-label">Percent growth per year</label>
+                <div class="input-group">
+                    <input type="number" class="form-control" id="growth" placeholder=7 disabled>
+                    <div class="input-group-postpend">
+                        <div class="input-group-text">%</div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-3">
+                <button type="button" class="btn btn-primary" onclick="drawChart()">See my future earnings</button>
+            </div>
+        </form>
+        <div class="row mt-3">
+            <div class="col-12" id="curve_chart">
+            </div>
+        </div>
+    </div>
+</body>
+
+</html>
