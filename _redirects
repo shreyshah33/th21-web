@@ -1,3 +1,6 @@
+# index link redirect
+/   /index.html 200
+
 # learn link redirect
 /learn  /learn.html 200
 
