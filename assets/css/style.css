@@ -540,10 +540,16 @@ section {
   border-radius: 4px;
   border: 1px solid #f9f9fa;
   transition: 0.3s;
+  text-align: center;
 }
 
 .featured-services .icon {
   margin: 0 0 15px 0;
+}
+
+.featured-services .icon img {
+  width: 100px;
+  height: 100px;
 }
 
 .featured-services .icon i {
@@ -564,6 +570,7 @@ section {
 
 .featured-services .icon-box:hover {
   border-color: #eaecef;
+  box-shadow: 0 8px 28px rgba(22, 223, 126, 0.45)
 }
 
 .featured-services .icon-box:hover .title a {
@@ -847,7 +854,7 @@ section {
 .cta {
   background: #16df7e;
   background-size: cover;
-  padding: 60px 0;
+  20px 20px 0px 20px;
 }
 
 .cta h3 {
