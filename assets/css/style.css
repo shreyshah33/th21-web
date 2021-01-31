@@ -84,6 +84,7 @@ h1, h2, h3, h4, h5, h6 {
   line-height: 1;
   font-weight: 700;
   letter-spacing: 0.5px;
+  margin-right: 10px !important;
 }
 
 #header .logo a {
@@ -677,6 +678,7 @@ section {
 
 .services .icon-box:hover {
   border-color: #eaecef;
+  box-shadow: 0 8px 28px rgba(22, 223, 126, 0.45)
 }
 
 .services .icon-box:hover h4 a {
@@ -1379,4 +1381,18 @@ section {
     -moz-text-align-last: center;
     text-align-last: center;
   }
+}
+
+.random {
+  list-style: none;
+  font-size: 0.8rem;
+  padding-left: 0;
+}
+
+.random li {
+  padding: 1%;
+}
+
+.random i {
+  color:#16df7e;
 }
