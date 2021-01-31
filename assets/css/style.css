@@ -1382,6 +1382,7 @@ section {
     text-align-last: center;
   }
 }
+<<<<<<< HEAD
 
 .random {
   list-style: none;
@@ -1395,4 +1396,12 @@ section {
 
 .random i {
   color:#16df7e;
+=======
+ 
+tr{
+   height: 40px;
+ }
+tr:nth-child(even) {
+  background-color: #f2f2f2;
+>>>>>>> 20d83a61314e81d7a56cc7cbe8bb0de86522cf3c
 }
